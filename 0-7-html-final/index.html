@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final HTML</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <!--  Mostra-me aqui as tuas páginas amarelas -->
+    <!-- Lembra-te que a semantica importa.
+        Cabeça, Tronco e Membros aka nav, main, section, etc...
+    -->
+
+    <!--  Ainda para mudar as classes -->
+
+    <div class="menu">
+        <div class="logo">
+            <img src="https://media-eu.camilyo.software/media-eu/static/1254/850.svg" alt="logo">
+        </div>
+
+        <nav class="menu-items">
+            <a href="#">Empresa</a>
+            <a href="#">Serviços</a>
+            <a href="#">Soluções</a>
+            <a href="#">Blog</a>
+            <a href="#">Contactos</a>
+        </nav>
+
+        <button class="button" id="primary_button">Páginas Amarelas Marketplace</button>
+    </div>
+
+    <div class="seccao01">
+
+        <h1 class="titulo">Sobre Nós</h1>
+        <p class="texto">Estamos no mercado há mais de sessenta anos e temos a experiência e o know-how necessários para desenvolver e implementar soluções que acrescem valor a qualquer empresa, independentemente do volume e da área de atividade. A nossa equipa de especialistas está focada no sucesso dos nossos clientes, ajudando-os a identificar oportunidades de negócio e a explorar todas as vertentes do marketing digital para que a estratégia online seja sólida e eficaz.</p>
+
+    </div>
+
+    <div class="seccao02">
+        <div id="missao">
+            <h3 class="sub_titulo">Missão</h3>
+            <ul class="lista">
+                <li>Democratizamos o marketing digital;</li>
+                <li>Aproximamos Empresas e Consumidor, em todo o mundo;</li>
+                <li>Formamos digital experts para serem referência no mercado.</li>
+            </ul>
+        </div>
+        <div id="visao">
+            <h3 class="sub_titulo">Visão</h3>
+            <ul class="lista">
+                <li>Ser o melhor aliado das empresas na ampliação dos seus negócios;</li>
+                <li>Ser top of mind na procura de serviços e produtos, acrescentando velocidade e valor;</li>
+                <li>Ser a escola de Vendas & Marketing Digital em Portugal.</li>
+            </ul>
+        </div>
+    </div>    
+
+    <div class="seccao03">
+        <h1 class="titulo">Serviços</h1>
+        <span>
+            <a href="#">SERVIÇOS</a>
+            <a href="#">WEBSITE & ADDONS</a>
+            <a href="#">REDES SOCIAIS</a>
+            <a href="#">PUBLICIDADE ONLINE</a>
+            <a href="#">GEO MARKETING</a>
+            <a href="#">FOTOGRAFIA</a>
+            <a href="#">VÍDEO</a>
+            <a href="#">IDENTIDADE VISUAL</a>
+            <a href="#">OFFICE 365</a>
+            <a href="#">MARKETPLACE</a>
+        </span>
+        <button>SABER MAIS SOBRE ESTE SERVIÇO</button>
+    </div>
+
+    <div class="seccao04">
+
+        <h1 class="titulo">Contactos</h1>
+        
+        <div class="info_contactos">
+            <p><b>Estamos aqui para ajudar, fale connosco! :)</b></p>
+            <p>Ligue para <b>808 210 220</b>. Segunda a Sexta das 9h às 13h e das 14h às 18h.</p>
+            <p>Ou envie um e-mail para <a href="mailto:pa@paginasamarelas.pt">pa@paginasamarelas.pt</a></p>
+        </div>
+
+        <div>
+
+
+            <!-- Form copiadao do exercicio anterior -->
+            
+            <form class="form_contacto">
+
+                <!-- Inserir Nome -->
+                <div class="first-name01">
+                    <input type="text" id="nome" placeholder="Nome*">
+                </div>
+        
+                <!-- Inserir Telefone -->
+                <div class="telefone">
+                    <input type="text" id="telefone" placeholder="Telefone*">
+                </div>
+        
+                <!-- Inserir Mail -->
+                <div class="mail">
+                    <input type="number" id="mail" placeholder="Mail*">
+                </div>
+        
+                <!-- Inserir NIF -->
+                <div class="nif">
+                    <input type="number" id="nif" placeholder="NIF*">
+                </div>
+        
+                <!-- Inserir Profissao -->
+                <div class="profissao">
+                    <select name="profissao" id="profissao" form="profissao">
+                        <option value="carpinteiros">Carpinteiros</option>
+                        <option value="serralheiros">Serralheiros</option>
+                    </select>
+                </div>
+        
+                <!-- Inserir Mensagem -->
+                <div class="mensagem">
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Escreve aqui a sua mensagem"></textarea>
+                </div>
+
+                <div class="checkbox">
+                    <div>
+                        <input type="checkbox" id="comunicacao" name="comunicacao"
+                               checked>
+                        <label for="comunicacao">Quero receber comunicações da Páginas Amarelas</label>
+                      </div>
+                      
+                      <div>
+                        <input type="checkbox" id="politica" name="politica">
+                        <label for="politica">Li e concordo com a Política de Privacidade da Páginas Amarelas</label>
+                      </div>
+                </div>
+
+                <div class="botao_enviar">
+                    <button id="enviar">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
