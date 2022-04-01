@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Final HTML</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
+
 <body>
     <!--  Mostra-me aqui as tuas páginas amarelas -->
     <!-- Lembra-te que a semantica importa.
@@ -34,7 +36,11 @@
     <div class="seccao01">
 
         <h1 class="titulo">Sobre Nós</h1>
-        <p class="texto">Estamos no mercado há mais de sessenta anos e temos a experiência e o know-how necessários para desenvolver e implementar soluções que acrescem valor a qualquer empresa, independentemente do volume e da área de atividade. A nossa equipa de especialistas está focada no sucesso dos nossos clientes, ajudando-os a identificar oportunidades de negócio e a explorar todas as vertentes do marketing digital para que a estratégia online seja sólida e eficaz.</p>
+        <p class="texto">Estamos no mercado há mais de sessenta anos e temos a experiência e o know-how necessários para
+            desenvolver e implementar soluções que acrescem valor a qualquer empresa, independentemente do volume e da
+            área de atividade. A nossa equipa de especialistas está focada no sucesso dos nossos clientes, ajudando-os a
+            identificar oportunidades de negócio e a explorar todas as vertentes do marketing digital para que a
+            estratégia online seja sólida e eficaz.</p>
 
     </div>
 
@@ -55,7 +61,7 @@
                 <li>Ser a escola de Vendas & Marketing Digital em Portugal.</li>
             </ul>
         </div>
-    </div>    
+    </div>
 
     <div class="seccao03">
         <h1 class="titulo">Serviços</h1>
@@ -77,40 +83,42 @@
     <div class="seccao04">
 
         <h1 class="titulo">Contactos</h1>
-        
+
         <div class="info_contactos">
             <p><b>Estamos aqui para ajudar, fale connosco! :)</b></p>
-            <p>Ligue para <b>808 210 220</b>. Segunda a Sexta das 9h às 13h e das 14h às 18h.</p>
+            <p>Ligue para <b>808 210 220</b>. Segunda a Sexta das 9h às 13h e das 14h às 18h.
+            </p>
             <p>Ou envie um e-mail para <a href="mailto:pa@paginasamarelas.pt">pa@paginasamarelas.pt</a></p>
         </div>
 
         <div>
 
+            <p id="pre_form"><b>Envie-nos uma mensagem!</b></p>
 
-            <!-- Form copiadao do exercicio anterior -->
-            
+            <!-- Form copiado do exercicio anterior -->
+
             <form class="form_contacto">
 
                 <!-- Inserir Nome -->
                 <div class="first-name01">
-                    <input type="text" id="nome" placeholder="Nome*">
+                    <input type="text" id="nome" placeholder="Nome*" required>
                 </div>
-        
+
                 <!-- Inserir Telefone -->
                 <div class="telefone">
-                    <input type="text" id="telefone" placeholder="Telefone*">
+                    <input type="text" id="telefone" placeholder="Telefone*" required>
                 </div>
-        
+
                 <!-- Inserir Mail -->
                 <div class="mail">
-                    <input type="number" id="mail" placeholder="Mail*">
+                    <input type="email" id="mail" placeholder="Mail*" required>
                 </div>
-        
+
                 <!-- Inserir NIF -->
                 <div class="nif">
-                    <input type="number" id="nif" placeholder="NIF*">
+                    <input type="number" id="nif" placeholder="NIF*" required>
                 </div>
-        
+
                 <!-- Inserir Profissao -->
                 <div class="profissao">
                     <select name="profissao" id="profissao" form="profissao">
@@ -118,27 +126,31 @@
                         <option value="serralheiros">Serralheiros</option>
                     </select>
                 </div>
-        
+
                 <!-- Inserir Mensagem -->
                 <div class="mensagem">
-                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Escreve aqui a sua mensagem"></textarea>
+                    <textarea name="comments" id="" cols="30" rows="10"
+                        placeholder="Escreve aqui a sua mensagem"></textarea>
                 </div>
+
+                <!-- CheckBox -->
 
                 <div class="checkbox">
                     <div>
-                        <input type="checkbox" id="comunicacao" name="comunicacao"
-                               checked>
+                        <input type="checkbox" id="comunicacao" name="comunicacao" required>
                         <label for="comunicacao">Quero receber comunicações da Páginas Amarelas</label>
-                      </div>
-                      
-                      <div>
-                        <input type="checkbox" id="politica" name="politica">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="politica" name="politica" required>
                         <label for="politica">Li e concordo com a Política de Privacidade da Páginas Amarelas</label>
-                      </div>
+                    </div>
                 </div>
 
+                <!-- Enviar -->
+
                 <div class="botao_enviar">
-                    <button id="enviar">Enviar</button>
+                    <button class="enviar_btn" id="enviar">Enviar</button>
                 </div>
 
             </form>
@@ -149,4 +161,5 @@
 
 
 </body>
+
 </html>
