@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buttons__wrapper {
+    width: 500px;
+    margin: 16px auto;
+}
+
+.d-flex {
+    display: flex;
+    gap: 12px;
+    padding: 10px;
+}
+
+.btn {
+    padding: 14px 25px;
+    border: 0;
+    border-radius: 10px;
+}
+ 
+.btn-small {
+    padding: 7px 25px;
+}
+
+.btn-cinza {
+    color: #ffffff;
+    background-color: gray;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #1652F0;
+}
+
+.btn-success {
+    color: #ffffff;
+    background-color: #14cf3c;
+}
+
+.btn-danger {
+    color: #ffffff;
+    background-color: #cf1414;
+}
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #dbac2b;
+}
+
+.btn-primary-outline {
+    color: #1652F0;
+    border: 2px solid #1652f0;
+    background-color: #ffffff;
+
+}
+
+.btn-success-outline {
+    color: #14cf3c;
+    border: 2px solid #14cf3c;
+    background-color: #ffffff;
+
+}
+
+.btn-danger-outline {
+    color: #cf1414;
+    border: 2px solid #cf1414;
+    background-color: #ffffff;
+
+}
+
+.btn-warning-outline {
+    color: #dbac2b;
+    border: 2px solid #dbac2b;
+    background-color: #ffffff;
+
+}
+
+.btn-cinza-outline {
+    color: gray;
+    border: 2px solid gray;
+    background-color: #ffffff;
+}
+
+
+/* Teste */
+
+/*
+.btn-primary:hover{
+    color: #1652F0;
+    border: 2px solid #1652f0;
+    background-color: #ffffff;
+}
+
+.btn-cinza:hover{
+    background-color: red;
+    color: #ffffff;
+}
+*/
