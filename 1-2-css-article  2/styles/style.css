@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+html{
+    font-family: 'Vollkorn', serif;
+}
+
+
+body{
+    max-width: 42em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: left;
+}
+
+.titulo_paragrafo{
+    text-align: left;
+}
+
+
+
+.menu-nav{
+    position: flex;
+    height: 3em;
+    padding-top: 4em;
+}
+
+.menu_item{
+    text-decoration: none;
+    width: auto;
+    height: auto;
+    padding: 15px 15px;
+    color: gainsboro;
+}
+
+
+.menu_item_active{
+    background-color: black;
+    color: white;
+}
+
+.menu_item:hover{
+    background-color: gainsboro;
+    color: black;
+}
+
+.menu_item_active:hover{
+    background-color: black;
+    color: white;
+}
+
+.paragrafo{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.paragrafo_fundo{
+    padding: 20px;
+}
+
+.follow{
+    text-decoration: none;
+    color: black;
+}
+
+.cartao{
+    border-bottom: 1, solid, black;
+}
+
+.thumb{
+    display: inline-block;
+}
+
+.body_cartao{
+    display: inline-block;
+}
+
+.titulo_cartao{
+    display: inherit;
+}
+
+.texto_cartao{
+    display: inherit;
+}
+
+.destaque{
+    color: yellow;
+}
+
+.list_item{
+    text-align: left;
+}
