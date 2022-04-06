@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
 html{
     font-family: 'Vollkorn', serif;
 }
@@ -15,10 +19,12 @@ body{
 
 p{
     text-align: left;
+    font-size: 0.8em;
 }
 
 .titulo_paragrafo{
     text-align: left;
+    font-size: 1.3em;  
 }
 
 
@@ -26,7 +32,8 @@ p{
 .menu-nav{
     position: flex;
     height: 3em;
-    padding-top: 4em;
+    padding-top: 2em;
+    padding-bottom: 4em;
 }
 
 .menu_item{
@@ -65,28 +72,52 @@ p{
 }
 
 .follow{
-    text-decoration: none;
-    color: black;
+    text-decoration: underline;
+    color: grey;
 }
 
 .cartao{
-    border-bottom: 1, solid, black;
+    border-bottom: 1px solid black;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.section03{
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 2em;
 }
 
 .thumb{
     display: inline-block;
+    text-align: left;
+    margin: 0;
+    width: 20%;
+    padding-right: 1rem;
+}
+
+.imagem{
+    width: 100%;
 }
 
 .body_cartao{
     display: inline-block;
+    width: 70%;
 }
 
 .titulo_cartao{
-    display: inherit;
+    text-align: left;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .texto_cartao{
     display: inherit;
+    width: auto;
+    height: auto;
 }
 
 .destaque{
@@ -95,4 +126,5 @@ p{
 
 .list_item{
     text-align: left;
+    font-size: 0.8em
 }
