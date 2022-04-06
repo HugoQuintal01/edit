@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+html, body {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.board {
+    border: 1px solid gainsboro;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cell {
+    border: 1px dashed gainsboro;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target {
+    background-color: gainsboro;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background: slateblue;
+    position: relative;
+    margin: 10px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+pre {
+    display: inline;
+}
+
+
+
+/* Coloca o teu CSS a partir daqui */
+.ball-0 {
+    position: absolute;
+    top: 8.5%;
+    left: 25.6%;
+}
+
+
+.ball-1 {
+    position: absolute;
+    top: 73.5%;
+    left: 9%;
+}
+
+.ball-2 {
+    position: absolute;
+    top: 138%;
+    left: 11.8%;
+}
+
+.ball-3 {
+    position: absolute;
+    top: 203%;
+    left: 6.2%;
+}
+
+.ball-4 {
+    position: absolute;
+    left: 15rem;
+}
+
+/* Mudança */
+
+.ball-5 {
+    position: absolute;
+    margin-left: 90px;
+}
+
+.ball-6 {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 170px;
+}
+
+.ball-7 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 250px;
+}
+
+.ball-8 {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.ball-9 {
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 90px;
+}
+
