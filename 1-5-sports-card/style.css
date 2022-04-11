@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,600;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.cartao{
+    position: absolute;
+    top: 5%;
+    left: 36%;
+    max-width: 380px;
+    max-height: 1000px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 15px #000000);
+}
+
+.content{
+    background-image: linear-gradient(to bottom, orange , red);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+body{
+    background-image: linear-gradient(to right, red , blue);
+}
+
+
+.nav_bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: inline-block;
+    text-align: left;
+}
+
+.logo-img{
+    width: 60px;
+    display: block;
+}
+
+.price{
+    text-align: right;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    color: white;
+}
+
+.content01{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.title{
+    text-align: left;
+    font-size: 1.4em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.text{
+    color: white;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.sub_title{
+    font-size: 10em;
+    text-transform: uppercase;
+    margin-left: -40px;
+    margin-right: 0;
+    margin-top: -300px;
+    margin-bottom: -240px;
+    color: white;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.button{
+    border: 1 solid blue;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: white;
+    color: blue;
+    border-color: blue;
+    z-index: 11;
+    min-width: 80px;
+    transition: all .5s;
+}
+
+.button:hover{
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.category{
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 100;
+    font-size: 0.9em
+}
+
+.footer{
+    padding-top: 30px;
+    padding-bottom: 2px;
+}
