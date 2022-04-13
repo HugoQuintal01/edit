@@ -11,15 +11,17 @@ html{
 }
 
 .cartao{
+    transform: scale(0.8);
     position: absolute;
     top: 5%;
-    left: 36%;
+    left: 37%;
     max-width: 380px;
     max-height: 1000px;
     text-align: center;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(5px 5px 15px #000000);
+    transition: all .5s;
 }
 
 .content{
@@ -103,9 +105,8 @@ body{
     background-color: white;
     color: blue;
     border-color: blue;
-    z-index: 11;
+    z-index: 111;
     min-width: 80px;
-    transition: all .5s;
 }
 
 .button:hover{
@@ -125,4 +126,75 @@ body{
 .footer{
     padding-top: 30px;
     padding-bottom: 2px;
+    position: relative;
+    z-index: 11;
+}
+
+
+.sapatilha{
+    position: absolute;
+    width: 100%;
+    bottom: 3em;
+    right: -3em;
+    z-index: 1;
+
+}
+
+
+
+
+.cartao:hover{
+    animation: mymove 3s infinite;
+    transform: rotate(-5deg);
+    transition-timing-function: ease;
+}
+@keyframes mymove {
+    50% {transform: rotate(5deg);}
+  }
+
+
+  .cartao02:hover{
+    animation: mymove 3s infinite;
+    transform: rotate(-5deg);
+    transition-timing-function: ease;
+     
+}
+@keyframes mymove {
+    50% {transform: rotate(5deg);}
+  }
+
+  .cartao03:hover{
+    animation: mymove 3s infinite;
+    transform: rotate(-5deg);
+    transition-timing-function: ease;
+}
+@keyframes mymove {
+    50% {transform: rotate(5deg);}
+  }
+
+
+.cartao02{
+    transform: scale(0.8);
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    max-width: 380px;
+    max-height: 1000px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 15px #000000);
+}
+
+.cartao03{
+    transform: scale(0.8);
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    max-width: 380px;
+    max-height: 1000px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 15px #000000);
 }
