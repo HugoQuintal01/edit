@@ -119,7 +119,7 @@ body{
 
 .sidebar{
     background-color: black;
-    width: 255px;
+    width: 365px;
     height: 100vh;
 }
 
@@ -130,6 +130,7 @@ body{
 
 
 .main_logo{
+    width: 100%;
     color: red ;
     font-family: lato;
     font-size: 20px;
@@ -151,6 +152,20 @@ body{
     color: white;
     text-transform: uppercase;
     border-bottom: 1px solid white;
+
+    background: linear-gradient(to right, red 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.side_menu_item:hover{
+    background-position: left bottom;
+}
+
+
+.menu_item:hover{
+    font-weight: bold;
 }
 
 .logo{
@@ -207,6 +222,7 @@ body{
 
 
 .slide{
+    position: relative;
     height: 630px;
     width: auto;
     background-image: url(../assets/title_image.png);
@@ -247,8 +263,7 @@ body{
 }
 
 .slide_content{
-    display: flex;
-    flex-flow: row;
+    display: relative;
     justify-content: flex-start;
     align-items: flex-end;
 }
@@ -277,12 +292,22 @@ body{
     content:url('../assets/chevron-right.png');
     width: 20px;
     height: 20px;
+    margin-top: -5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .btn_info::before{
     content:url('../assets/info.png');
     width: 20px;
     height: 20px;
+    margin-top: -5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .sec_movies{
@@ -338,3 +363,42 @@ body{
     flex-wrap: nowrap;
     overflow-x: auto;    
 }
+
+.film_title{
+    position: absolute;
+    top: initial;
+    bottom: 70px;
+    right: initial;
+    left: 50px;
+    width: 100%;
+}
+
+.btn_play{
+    position: absolute;
+    top: initial;
+    bottom: 30px;
+    right: initial;
+    left: 50px;
+}
+
+.btn_info{
+    position: absolute;
+    top: initial;
+    bottom: 30px;
+    right: initial;
+    left: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
