@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #f69898;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 990px;
+    margin: 0 auto;
+}
+
+.container {
+    width: calc(50% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 400px;
+    border: 1px solid #d38080;
+    margin: 4px;
+    flex-direction: column;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background: beige;
+}
+
+.mini-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.mini-boxes-01 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.mini-boxes-02 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.mini-boxes-03 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.hole {
+    width: 30px;
+    height: 30px;
+    background: beige;
+    border-radius: 100%;
+    margin: 8px;
+}
+
+.perspective-square{
+    transform: rotate(45deg);
+    border-radius: 35px 20px;
+    filter: drop-shadow(20px 15px 40px #00000090);
+    animation: move 1s infinite;
+}
+
+.z-squares{
+    transform: skew(12deg, 12deg);
+    filter: drop-shadow(20px 15px 60px #00000090);
+    animation: skewskew 2s infinite;
+}
+
+.rotate-square{
+    opacity: 100%;
+    animation: rotate 5s infinite;
+
+}
+
+.mini-boxes .hole:nth-child(odd){
+    background: #cc33cc;
+}
+
+.mini-boxes-01 .hole:nth-child(n+1){
+    background: #cc33cc;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move {
+    from{
+        transform: translate(0px);
+    }
+
+    to{
+        transform: translate(0px, 20px);
+    }
+}
+
+
+@keyframes skewskew {
+    from{
+        transform: skew(0deg, 0deg);
+    }
+
+    to{
+        transform: skew(15deg, 15deg);
+    }
+}
+
+
+
+
+
+
