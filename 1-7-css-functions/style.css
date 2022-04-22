@@ -66,26 +66,33 @@ body {
     transform: rotate(45deg);
     border-radius: 35px 20px;
     filter: drop-shadow(20px 15px 40px #00000090);
-    animation: move 1s infinite;
+    animation: move 1s infinite alternate-reverse;
 }
 
 .z-squares{
     transform: skew(12deg, 12deg);
     filter: drop-shadow(20px 15px 60px #00000090);
-    animation: skewskew 2s infinite;
+    animation: skewskew 2s infinite alternate-reverse;
 }
 
 .rotate-square{
     opacity: 100%;
-    animation: rotate 5s infinite;
-
+    animation: rotate 5s infinite alternate-reverse;
 }
 
 .mini-boxes .hole:nth-child(odd){
     background: #cc33cc;
 }
 
-.mini-boxes-01 .hole:nth-child(n+1){
+.mini-boxes-01 .hole:nth-child(4){
+    background: #cc33cc;
+}
+
+.mini-boxes-02 .hole:nth-child(-n+5){
+    background: #cc33cc;
+}
+
+.mini-boxes-03 .hole:last-child{
     background: #cc33cc;
 }
 
@@ -101,11 +108,11 @@ body {
 
 @keyframes move {
     from{
-        transform: translate(0px);
+        transform: translate(0px) rotate(45deg);
     }
 
     to{
-        transform: translate(0px, 20px);
+        transform: translate(0px, 40px) rotate(45deg);
     }
 }
 
