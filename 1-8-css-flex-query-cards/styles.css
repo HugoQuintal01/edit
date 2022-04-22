@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,500&display=swap');
+
+html, body {  
+    font-family: 'Open Sans', sans-serif;  
+    overflow-x: hidden;
+}
+
+
+.body__{
+    width: 1200px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.card{
+    width: 350px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+
+
+.divider{
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #035397;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title__items{
+    padding: 0;
+    margin: 0;
+}
+
+.texts__content{
+    padding: 0;;
+}
+
+.img__item{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+
+.sec__content{
+    width: 100%;
+}
+
+.title__card{
+    font-size: 22px;
+}
+
+.produtivity__content{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.footer{
+    width: 100%;
+}
+
+
+
+.author{
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.sec__footer{
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.author__item{
+    display: flex;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+.author__title{
+    color: blue;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.read{
+    text-decoration: none;
+    color: blue;
+}
+
+.texts__content{
+    padding: 0 20px 20px 20px;
+}
+
+
+
+
+/* media query a utilizar em mobile 
+@media All and (min-width: 0 and max-width: 768px){
+
+}
+*/
+
+/* para screen, entre 0 e o maximo width de 768px*/
+ 
