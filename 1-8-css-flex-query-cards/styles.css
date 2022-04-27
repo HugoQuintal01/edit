@@ -3,11 +3,14 @@
 html, body {  
     font-family: 'Open Sans', sans-serif;  
     overflow-x: hidden;
+    background-color: #1E90FF;
 }
 
 
 .body__{
     width: 1200px;
+    margin-left: 12%;
+    margin-top: 3%;
 }
 
 .wrapper {
@@ -18,15 +21,16 @@ html, body {
 .card{
     width: 350px;
     border-radius: 10px;
-    background-color: gainsboro;
+    background-color: white;   
 }
 
 
 .divider{
-    width: 100%;
+    display: block;
+    width: 90%;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .cover{
@@ -35,7 +39,7 @@ html, body {
     align-items: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: #035397;
+    background-color: #1E90FF50;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -43,6 +47,7 @@ html, body {
 .title__items{
     padding: 0;
     margin: 0;
+    display: block;
 }
 
 .texts__content{
@@ -71,14 +76,19 @@ html, body {
 }
 
 .footer{
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
+    display: block;
+    align-items: center;
 }
 
 
 
-.author{
+.footer .author{
     display: inline-flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .sec__footer{
@@ -86,7 +96,7 @@ html, body {
     justify-content: flex-end;
 }
 
-.author__item{
+.footer .author .author__item{
     display: flex;
     align-content: center;
     width: 50px;
@@ -95,15 +105,21 @@ html, body {
 }
 
 
-.author__title{
+.footer .author .author__title{
+    padding-left: 10px;
+    align-items: center;
     color: blue;
     font-size: 14px;
     font-weight: 500;
 }
 
-.read{
+.footer .sec__footer .read{
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
     text-decoration: none;
     color: blue;
+    padding-right: 10px;
 }
 
 .texts__content{
@@ -113,11 +129,32 @@ html, body {
 
 
 
-/* media query a utilizar em mobile 
-@media All and (min-width: 0 and max-width: 768px){
+ /*media query a utilizar em mobile */
 
-}
-*/
+ @media (max-width: 600px) {
+
+
+    .body__{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;   
+    }
+
+    .text{
+        display: none;
+    }
+
+ }
+
 
 /* para screen, entre 0 e o maximo width de 768px*/
  
