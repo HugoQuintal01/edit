@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Fira+Sans:wght@600&display=swap');
+
+html body{
+    background-color: gainsboro;
+}
+.card {
+    display: flex;
+    width: 500px;
+    height: 250px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition-duration: all .5s;
+}
+
+.content{
+    width: 80%;
+    height: auto;
+    background-image: url('https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.side{
+    position: relative;
+    width: 20%;
+    height: auto;
+    background-color: white;
+}
+
+.titulo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 35px;
+    color: white;
+    z-index: 2;
+}
+
+.legenda{
+    writing-mode: vertical-rl;
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    font-family: 'EB Garamond', serif;
+    color: grey;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.card .ball{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: blue;
+    z-index: 1;
+    box-sizing: border-box;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    transition-duration: 0.8s;
+}
+
+.divider{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 0;
+    border: 1px dashed white;
+}
+
+.divider::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: gainsboro;
+    top: -10px;
+    left: -10px;
+}
+
+.divider::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: gainsboro;
+    bottom: -10px;
+    left: -10px;
+}
+
+// hovers
+
+.card:hover{
+    .ball{
+        transform: scale(8);
+        transition-duration: 0.7s;
+        opacity: .8;
+        cursor: pointer;
+    }
+}
+
+
