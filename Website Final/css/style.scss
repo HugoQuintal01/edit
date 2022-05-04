@@ -1,3 +1,8 @@
+@import 'fonts.scss', 'main.scss', 'hovers.scss';
+//@import 'reset.scss';
+@import 'hovers.scss';
+
+
 
 $azul: #0064DA;
 
@@ -305,6 +310,8 @@ h2 {
             margin-bottom: 20px;
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
             cursor: pointer;
+            transition-duration: .5s;
+            position: relative;
         }
 
         .query_buttons{
@@ -453,6 +460,7 @@ h2 {
 
 
 
+// Agrupar nas classes
 
 // Hovers
 
@@ -554,3 +562,140 @@ h2 {
 
 
 
+
+
+
+// Testes Random
+
+// Afters
+
+.main_section .video{
+    position: relative;
+}
+
+.video_class{
+    position: relative;
+}
+
+
+
+
+.main_section .video_class::before{
+    display: block;
+    position: absolute;
+    content: '';
+    left: 30%;
+    top: 0;
+    color: black;
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.main_section .video_class{
+    opacity: 1;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.main_section .video_class:hover::before{
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+.main_section .video_class .video:hover{
+    opacity: 0.3;
+    transition-duration: .5s;
+}
+
+
+.main_section .video_class::after{
+    content: "PLAY";
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    left: 48%;
+    top: 43%;
+    transition-duration: .5s;
+    opacity: 0;
+    z-index: 0;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.main_section .video_class:hover::after{
+    opacity: 1;
+    transition-duration: .5s;
+    z-index: 11;
+}
+
+
+.query_section .query_card .query_card__image:hover{
+    background-color: $azul;
+    opacity: 0.8;
+    transition-duration: .5s;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.query_section .query_card .query_card__image:hover::before{
+    content: 'Development';
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    position: absolute;
+    width: 130px;
+    height: 25px;
+    left: 32%;
+    top: 42%;
+    color: white;
+    transition-duration: .5s;
+}
+
+
+.query_section .circulos .bola01{
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    margin-bottom: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.query_section .circulos .bola02{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.circulos{
+    display: flex;
+    justify-content: center;
+}
+
+.query_section .circulos .bola01:hover{
+    background-color: green;
+    opacity: 0.7;
+} 
+
+.query_section .circulos .bola02:hover{
+    background-color: red;
+    opacity: 0.7;
+} 
+
+.query_section .circulos .bola01:hover .query_card .query_card__image{
+    background-color: red;
+    opacity: 0.7;
+}
